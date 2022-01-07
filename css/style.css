@@ -1,0 +1,707 @@
+body{
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#b9b4b4,#e6e2e2,#716e6e);
+	background-repeat: no-repeat;
+	background-size: 2080px 700px;
+}
+::placeholder{
+	color: gray;
+}
+#menu{
+	width: 15%;
+	font-size: 15pt;
+	background: gray;
+	padding: 20px 0px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-indent: 20px;
+}
+#menu:hover{
+	color: white;
+	background: #555;
+}
+#login_form{
+	display: none;
+}
+#close_login_form{
+	font-size: 20pt;
+	float: right;
+	cursor: pointer;
+}
+#close_login_form:hover{
+	color: red;
+}
+#menu img{
+	position: absolute;
+	margin-left: -30px;
+}
+#login_btn{
+	cursor: pointer;
+}
+#menu a{
+	text-decoration: none;
+	color: black;
+}
+#header{
+	width: 100%;
+	height: 80px;
+	display: inline-block;
+	text-align: center;
+	background: linear-gradient(#999,#666,#999);
+	box-shadow: 0px 3px 5px gray;
+}
+#login-form span{
+	font-size: 25pt;
+}
+#login-form{
+	-webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+	margin: auto;
+	width: 25%;
+	height: 350px;
+	padding: 5px 20px;
+	background: transparent;
+}
+#login-form input{
+	margin-top: 10px;
+	height: 30px;
+	text-indent: 40px;
+	outline: none;
+	width: 80%;
+	background: transparent;
+	font-size: 15pt;
+}
+#login-form input[type=text]:focus,input[type=password]:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#login-form button{
+	margin-top: 35px;
+	padding: 8px 20px;
+	font-size: 15pt;
+	font-family: calibri;
+	font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 80%;
+    border: 1px solid black;
+    background: #b5b2b2;
+}
+#login-form button:hover{
+	background: #9e9c9c;
+	border: 1px solid gray; 
+}
+#login-form img{
+	position: absolute;
+	margin-top: 16px;
+	margin-left: 10px;
+}
+#footer{
+	width: 100%;
+	font-size: 10pt;
+	position: fixed;
+	bottom: 0px;
+	text-align: left;
+	text-indent: 20px;
+}
+#footer h3{
+	opacity: 1;
+}
+#header h1{
+	font-family: Arial narrow;
+	color: #cac7c7;
+	text-shadow: 2px 3px 0px black;
+}
+#account_details_back{
+	position: absolute;
+	height: 40px;
+	width: 300px;
+	margin-top: 80px;
+	background: rgba(0,0,0,0.3);
+	border-bottom-right-radius: 100%;
+}
+#add_student{
+	border: 1px solid black;
+	background: transparent;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+#account_details{
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 40px;
+	line-height: 20px;
+}
+#account_details img{
+	border: 1px solid gray;
+	background: #999;
+}
+#account_details label{
+	position: absolute;
+	margin-top: -70px;
+	margin-left: -10px;
+	width: 300px;
+	font-weight: bold;
+	font-size: 15pt;
+	color: white;
+	text-shadow: 2px 1px 0px gray;
+}
+#account_details span img{
+	background: none;
+	border: none;
+	display: block;
+}
+#account_details span{
+	margin-left: 45px;
+	margin-top: -30px;
+	position: absolute;
+	font-weight: bold;
+	cursor: pointer;
+}
+#settings{
+	border: 1px solid black;
+	width: 50%;
+	height: 400px;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+#error_message_index{
+	border: 1px solid red;
+	width: 50%;
+	padding: 10px 0px;
+	background: #dc9898;
+	border-radius: 5px;
+}
+#error_message_home{
+	border: 1px solid red;
+	width: 50%;
+	padding: 10px 0px;
+	background: #dc9898;
+	border-radius: 5px;
+}
+#success_message_home{
+	border: 1px solid green;
+	width: 50%;
+	padding: 10px 0px;
+	background: #99dc98;
+	border-radius: 5px;
+}
+#menu_home div{
+	display: inline-block;
+	border: 1px solid black;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding: 10px 10px;
+	cursor: pointer;
+}
+#menu_home div:hover{
+	background: #999;
+	border: 1px solid gray;
+}
+#container_student_record{
+	border: 1px solid black;
+	width: 80%;
+	margin: 0 auto;
+	height: 400px;
+	overflow-y: scroll;
+	display: none;
+	padding: 10px 10px;
+}
+#add_student_form input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder{
+	color: white;
+}
+#add_student_form input[type=text]:focus,input[type=password]:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#add_student_form input[type=email]:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#login_form input[type=text]::placeholder,#login_form input[type=password]::placeholder{
+	color: gray;
+}
+#add_student_form{
+	margin-top: -30px;
+	border: 1px solid black;
+	width: 40%;
+	background: transparent;
+	display: none;
+}
+#add_student_form input{
+	margin-top: 10px;
+	height: 25px;
+	text-indent: 10px;
+	outline: none;
+	width: 70%;
+	background: transparent;
+	font-size: 13pt;
+}
+#add_student_form button{
+	margin-top: 35px;
+	padding: 8px 20px;
+	font-size: 15pt;
+	font-family: calibri;
+	font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 30%;
+    border: 1px solid black;
+    background: #b5b2b2;
+    text-indent: 18px;
+    height: 50px;
+}
+#add_student_form button:hover{
+	background: #9e9c9c;
+	border: 1px solid gray; 
+}
+#close_add_student_form{
+	margin-right: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 18pt;
+	float: right;
+	cursor: pointer;
+}
+#delete_student{
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	padding: 5px 5px;
+}
+#delete_student:hover{
+	border: 1px solid red;
+	background: #ce2424;
+}
+#edit_student{
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	padding: 5px 10px;
+}#edit_student:hover{
+	border: 1px solid green;
+	background: #63bd53;
+}
+
+#edit_student_form{
+	position: absolute;
+	margin-top: -60px;
+	margin-left: 400px;
+	border: 1px solid black;
+	width: 535px;
+	background: rgba(0,0,0,0.1);
+	padding: 10px 20px;
+}
+#edit_student_form label{
+	position: absolute;
+	margin-top: -256px;
+	margin-left: 290px;
+}
+#edit_student_form input{
+	margin-top: 10px;
+	height: 20px;
+	text-indent: 10px;
+	outline: none;
+	width: 240px;
+	background: transparent;
+	font-size: 13pt;
+	margin-bottom: 10px;
+}
+#edit_student_form button{
+	margin-top: 35px;
+	font-size: 15pt;
+	font-family: calibri;
+	font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+    background: #b5b2b2;
+    margin-left: 220px;
+}
+#edit_student_form button:hover{
+	background: #9e9c9c;
+	border: 1px solid gray; 
+}
+#edit_student_form select{
+	border-radius: 5px;
+	margin-top: 10px;
+	height: 25px;
+	text-indent: 10px;
+	outline: none;
+	width: 100%;
+	background: transparent;
+	font-size: 13pt;
+	border: 1px solid white;
+}
+#close_edit_student_form{
+	margin-right: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 18pt;
+	float: right;
+	cursor: pointer;
+}
+#edit_student_form input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder{
+	color: white;
+}
+#edit_student_form input[type=text]:focus,input[type=password]:focus,select:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#edit_student_form input[type=email]:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#delete_student_form{
+	border: 1px solid black;
+	width: 35%;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+#delete_student_form form button{
+	padding: 10px 20px;
+	width: 100px;
+	margin: 0 auto;
+	cursor: pointer;
+	border: 1px solid black;
+	background: transparent;
+	outline: none;
+}
+#delete_student_form form button:hover{
+	background: rgba(0,0,0,0.1);
+}
+#subjects_container{
+	border: 1px solid black;
+	height: 400px;
+	width: 70%;
+	overflow-y: scroll;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+#subjects_container table a{
+	color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 5px 5px;
+}
+#subjects_container table a:hover{
+	background: rgba(0,0,0,0.1);
+}
+#form_search_subject{
+	float: right;
+	margin-top: -5px;
+	margin-right: -10px;
+}
+#form_search_subject input{
+	text-indent: 5px;
+	outline: none;
+	width: 80%;
+	background: transparent;
+	font-size: 13pt;
+}
+#form_search_subject button{
+	padding: 2px 7px;
+	border: 1px solid gray;
+	background: transparent;
+	font-size: 13pt;
+	cursor: pointer;
+}
+#add_subject_form{
+	border: 1px solid black;
+	width: 35%;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+#add_subject_form input{
+	margin-top: 10px;
+	height: 30px;
+	text-indent: 10px;
+	outline: none;
+	width: 80%;
+	background: transparent;
+	font-size: 13pt;
+}
+#add_subject_form input[type=text]:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#add_subject_form form button{
+	border: 1px solid black;
+	background: transparent;
+	width: 100px;
+	height: 35px;
+	font-size: 15pt;
+	cursor: pointer;
+	outline: none;
+}
+#add_subject_form form button:hover{
+	background: rgba(0,0,0,0.1);
+}
+#attendance_sheet{
+	border: 1px solid black; 
+	height: 400px;
+	width: 60%;
+	margin: 0 auto;
+	padding: 10px 10px;
+	overflow-y: scroll;
+}
+#attendance_sheet form select{
+	height: 30px;
+	text-indent: 10px;
+	width: 200px;
+	outline: none;
+	background: transparent;
+	font-size: 12pt;
+	color: gray;
+}
+#attendance_sheet form select option{
+	color: black;
+}
+#attendance_sheet form button{
+	border: 1px solid gray;
+	background: transparent;
+	width: 30px;
+	height: 30px;
+	font-size: 15pt;
+	cursor: pointer;
+	outline: none;
+}
+#attendance_sheet form button:hover{
+	background: rgba(0,0,0,0.2);
+}
+#container_student_attendace{
+	border: 1px solid black; 
+	height: 400px;
+	width: 60%;
+	margin: 0 auto;
+	padding: 10px 10px;
+	overflow-y: scroll;
+}
+#container_student_attendace form button{
+	border: 1px solid black;
+	background: transparent;
+	padding: 5px 5px;
+	cursor: pointer;
+	outline: none;
+}
+#container_student_attendace form button:hover{
+	background: rgba(0,0,0,0.2);
+}
+#menu_student_attendance{
+	position: absolute;
+	width: 50%;
+	margin-bottom: 200px;
+}
+#form_subjects_stud_att{
+	padding: 10px 10px;
+	overflow-x: auto;
+}
+#form_subjects_stud_att a{
+	border: 1px solid black;
+	padding: 5px 5px;
+	color: black;
+	text-decoration: none;
+}
+#form_subjects_stud_att a:hover{
+	background: rgba(0,0,0,0.2);
+	color: white;
+}
+#form_search_student_attendance{
+	float: right;
+	margin-top: -7px;
+	margin-bottom: -10px; 
+}
+#form_search_student_attendance input{
+	text-indent: 5px;
+	outline: none;
+	background: transparent;
+	font-size: 15pt;
+}
+#container_enroll{
+	border: 1px solid black;
+	height: 400px;
+	width: 60%;
+	margin: 0 auto;
+	padding: 10px 10px;
+	overflow-y: scroll;
+}
+#enroll_student table form button{
+	border: 1px solid black;
+	padding: 5px 5px;
+	width: 100px;
+	cursor: pointer;
+	outline: none;
+	font-size: 12pt;
+}
+#enroll_student table form button:hover{
+	background: rgba(0,0,0,0.2);
+}
+#form_edit_enroll{
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 35%;
+	padding: 10px 10px;
+}
+#form_edit_enroll form button{
+	border: 1px solid black;
+	padding: 5px 5px;
+	width: 120px;
+	cursor: pointer;
+	outline: none;
+	font-size: 12pt;
+}
+#form_edit_enroll form button:hover{
+	background: rgba(0,0,0,0.2);
+}
+#form_edit_subject{
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 35%;
+	padding: 10px 10px;
+}
+#form_edit_subject form input{
+	margin-top: 10px;
+	height: 30px;
+	text-indent: 10px;
+	outline: none;
+	width: 80%;
+	background: transparent;
+	font-size: 13pt;
+}
+#form_edit_subject form button{
+	border: 1px solid black;
+	padding: 5px 5px;
+	width: 100px;
+	cursor: pointer;
+	outline: none;
+	font-size: 12pt;
+}
+#form_edit_subject form button:hover{
+	background: rgba(0,0,0,0.1);
+}
+#form_edit_subject form a{
+	float: right;
+	cursor: pointer;
+	outline: none;
+	font-size: 12pt;
+	text-decoration: none;
+	color: black;
+}
+#form_edit_student_attendance{
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 35%;
+	padding: 10px 10px;
+}
+#form_edit_student_attendance button{
+	border: 1px solid black;
+	padding: 5px 5px;
+	width: 120px;
+	cursor: pointer;
+	outline: none;
+	font-size: 12pt;
+}
+#form_edit_student_attendance button:hover{
+	background: rgba(0,0,0,0.2);
+}
+#container_accounts{
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 70%;
+	padding: 10px 10px;
+	height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#container_accounts form{
+	float: right;
+}
+#container_accounts form input{
+	text-indent: 10px;
+	outline: none;
+	width: 80%;
+	background: transparent;
+	font-size: 13pt;
+}
+#container_accounts form button{
+	border: 1px solid gray;
+	padding: 3px 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 12pt;
+}
+#form_add_account{
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 55%;
+	padding: 20px 20px;
+	height: 350px;
+}
+#form_add_account span{
+	position: absolute;
+	margin-left: 30px;
+	margin-top: -115px;
+}
+#form_add_account input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder{
+	color: gray;
+}
+#form_add_account input[type=text]:focus,input[type=password]:focus,select:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#form_add_account input[type=email]:focus{
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+#form_add_account form input,select{
+	margin-top: 10px;
+	text-indent: 10px;
+	outline: none;
+	width: 50%;
+	background: transparent;
+	font-size: 15pt;
+}
+#form_add_account form select{
+	border: 1px solid white;
+}
+#form_add_account form button{
+	border: 1px solid gray;
+	padding: 5px 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 15pt;
+}
+#form_add_account form button:hover{
+	background: rgba(0,0,0,0.2);
+}
+#change_password{
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 35%;
+	padding: 20px 20px;
+	height: 270px;
+}
+#change_password input{
+	margin-top: 10px;
+	text-indent: 5px;
+	outline: none;
+	background: transparent;
+	font-size: 13pt;
+}
+#change_password button{
+	border: 1px solid gray;
+	margin-top: 10px;
+	outline: none;
+	background: transparent;
+	font-size: 15pt;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+#change_password button:hover{
+	background: rgba(0,0,0,0.2);
+}
